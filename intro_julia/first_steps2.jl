@@ -10,6 +10,8 @@ first_functionA(3,2)
 first_functionB(x,y) = x*y 
 first_functionB(3,2)
 first_functionB(3,5)
+first_functionB(2,5)
+
 
 # You can define a new function that will use another function but ALWAYS evaluate it at a particular value
 second_function(x) = first_functionB(x,3)
