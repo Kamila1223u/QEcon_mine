@@ -66,7 +66,20 @@ plot!(times_two,-10:0.1:10)
 # c. Plot function h at the interval (-100, 100), using a 0.1 step size
 ####################################################################################### 
 # NOTE: the way to write Greek letters is to start typing: \alpha, \beta etc.
+x = 1
+α = 2
+β = 3
+γ = 4
+δ = 5
+g(x,α,β,γ,δ) = α*x^3 + β*x^2 + γ*x + δ
+x = 1
+α = 2
+β = 3
+γ = 4
+δ = 5
 
+g(x,α,β,γ,δ)
+g(1,2,3,4,5) 
 function seventh_function(x)
     a = x^2
     b = 2 * a
@@ -95,6 +108,7 @@ sort!(x)
 for i in [1,2,3,4,5]
     println(i)
 end
+
 for i in 1:5
     println(i)
 end
@@ -148,7 +162,14 @@ end
 # 6. Return the mean
 # 7. Test the function
 ####################################################################################### 
-
+for i in 1:5
+    sum = sum + i
+    println("sum: ", sum)
+end
+println("1+2+3+4+5=", sum)
+function my_mean
+    
+end
 
 ### Arrays and matrices ###
 # We have already seen a Julia array and array indexing in action
